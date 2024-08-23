@@ -3,7 +3,12 @@
 
 ## Overview
 
-ChromaRAG is a Retrieval-Augmented Generation (RAG) pipeline that supports multimodal data inputs, such as text, images, and URIs. It is built using FastAPI, ChromaDB, and Docker, with features for API key-based authentication, data validation, background processing, rate limiting, and compliance with GDPR, HIPAA, and SOC 2 regulations.
+ChromaRAG is a Retrieval-Augmented Generation (RAG) pipeline that supports multimodal data inputs, such as text, images, and URIs. It is built using FastAPI, ChromaDB, and Docker, with features for API key-based authentication, data validation, background processing, and rate limiting.
+
+## Compliance
+
+I will be seeking to ensure that ChromaRAG complies with GDPR, HIPAA, and SOC 2 standards. Achieving these certifications will require significant work to implement the necessary security controls, data management practices, and documentation.
+
 
 ## Features
 
@@ -63,9 +68,9 @@ The API is secured using API keys. Include the API key in the `Authorization` he
 curl -H "Authorization: Bearer your-secure-api-key" http://localhost:8000/your-endpoint
 ```
 
-## Data Encryption and Compliance
+## Data Encryption
 
-Sensitive data is encrypted and anonymized using the `cryptography` library to ensure compliance with GDPR, HIPAA, and SOC 2 regulations. Refer to `app/security.py` for implementation details.
+Sensitive data is encrypted and anonymized using the cryptography library to ensure data protection. Refer to `app/security.py` for implementation details.
 
 ## Contributing
 
