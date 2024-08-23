@@ -42,7 +42,7 @@ ChromaRAG/
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/yourusername/ChromaRAG.git
+    git clone https://github.com/g3ntl3Giants/ChromaRAG.git
     cd ChromaRAG
     ```
 
@@ -68,6 +68,7 @@ curl -H "Authorization: Bearer your-secure-api-key" http://localhost:8000/your-e
 Sensitive data is encrypted and anonymized using the `cryptography` library to ensure compliance with GDPR, HIPAA, and SOC 2 regulations. Refer to `app/security.py` for implementation details.
 
 ## Contributing
+
 
 Feel free to contribute by submitting a pull request. Ensure that your code adheres to the project's coding standards.
 
