@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  chromadb:
+    image: chromadb/chromadb:latest
+    volumes:
+      - ./data/chromadb:/data
+    command: chroma run --path /data/chromadb
+    ports:
+      - "8001:8000"
+
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - chromadb
+    volumes:
+      - .:/app
+    environment:
+      - DATABASE_URL=http://chromadb:8001
